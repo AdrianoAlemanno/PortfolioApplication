@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PortfolioApplication.Models;
 
 namespace PortfolioApplication.Controllers;
 
@@ -14,9 +15,9 @@ public class PortfolioController : ControllerBase
     }
 
     [HttpGet("User")]
-    public MainCharacter GetUserData()
+    public User GetUserData()
     {
-        return new MainCharacter
+        return new User
         (
             "Adriano",
             "Alemanno",
